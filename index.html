@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="js/index.js"></script>
   <title>Camping Josée</title>
 </head>
 
@@ -38,10 +37,30 @@
         </ul>
 
       </div>
-      <div class="header">
-        <img src="images/background.png">
+      <div class="headerslides" style="width: 100%;">
 
+        <img class="mySlides " src="images/background_header_2.png" style="width:100%">
+        <img class="mySlides " src="images/background_header.jpg" style="width:100%">
+        <img class="mySlides " src="images/background.png" style="width:100%">
       </div>
+      <script>
+        var Index = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          Index++;
+          if (Index > x.length) {
+            Index = 1
+          }
+          x[Index - 1].style.display = "block";
+          setTimeout(carousel, 5000);
+        }
+      </script>
     </nav>
   </header>
 

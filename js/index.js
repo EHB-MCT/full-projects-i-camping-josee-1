@@ -6,29 +6,19 @@ function myFunction() {
         x.style.display = "block";
     }
 }
-var slideIndex = 1;
-showSlides(slideIndex);
+var Index = 0;
+carousel();
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function carousel() {
     var i;
-    var slides = document.getElementsByClassName("item");
-    if (n > slides.length) {
-        slideIndex = 1
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
     }
-    if (n < 1) {
-        slideIndex = slides.length
+    Index++;
+    if (Index > x.length) {
+        Index = 1
     }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slides[slideIndex - 1].style.display = "flex";
+    x[Index - 1].style.display = "block";
+    setTimeout(carousel, 5000);
 }
