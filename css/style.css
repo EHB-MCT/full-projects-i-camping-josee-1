@@ -152,4 +152,8 @@
     .aboutslide img {
         border-radius: 15px;
     }
+
+    .news {
+        background-color: lightyellow;
+    }
 }
