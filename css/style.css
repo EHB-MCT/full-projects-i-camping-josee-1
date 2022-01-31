@@ -29,9 +29,8 @@ header {
     float: left;
     width: 90px;
     height: auto;
-    transform: translate(10%, -990%);
-    transform: translateZ(-100);
-
+    position: relative;
+    transform: translate(0%, -980%);
 }
 
 
@@ -62,8 +61,8 @@ header {
 }
 
 .navigation {
-    position: relative;
-    transform: translate(0%, -1256%);
+    position: absolute;
+    top: 0px;
     display: flex;
     justify-content: flex-end;
     float: right;
@@ -89,7 +88,7 @@ a {
     background-color: white;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    transform: translate(0%, -20%);
+    transform: translate(0%, -10%);
 
 }
 
