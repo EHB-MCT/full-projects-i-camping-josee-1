@@ -21,8 +21,6 @@ header {
     position: relative;
     text-align: center;
     color: white;
-    background-color: rgba(255, 255, 255, 0.4);
-
 }
 
 
@@ -31,8 +29,8 @@ header {
     float: left;
     width: 90px;
     height: auto;
-    position: relative;
-    transform: translate(10%, -980%);
+    transform: translate(10%, -990%);
+    transform: translateZ(-100);
 
 }
 
@@ -65,11 +63,12 @@ header {
 
 .navigation {
     position: relative;
-    transform: translate(0%, -1150%);
+    transform: translate(0%, -1256%);
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     float: right;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
 }
 
 
