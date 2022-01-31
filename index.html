@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <header>
     <nav role="navigation">
       <div id="menuToggle">
@@ -38,10 +39,14 @@
 
       </div>
       <div class="headerslides" style="width: 100%;">
-
         <img class="mySlides " src="images/background_header_2.png" style="width:100%">
         <img class="mySlides " src="images/background_header.jpg" style="width:100%">
         <img class="mySlides " src="images/background.png" style="width:100%">
+
+      </div>
+      <div class="headertext">
+        <h1>Camping Josée</h1>
+        <p>Slogan</p>
       </div>
       <script>
         var Index = 0;
@@ -62,6 +67,44 @@
         }
       </script>
     </nav>
+    <div class="content">
+
+      <div class="About">
+        <h2>Who are we</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corrupti nisi expedita qui! Perferendis
+          ut impedit cum animi temporibus quidem dignissimos distinctio error provident alias, architecto praesentium,
+          corporis dolores esse.</p>
+      </div>
+
+      <div class="aboutslide" style="width: 60%;height: 30%;">
+
+
+        <img class="Slides " src="images/sfeerfoto1.png" style="width:100%">
+        <img class="Slides " src="images/sfeerfoto2.png" style="width:100%">
+        <img class="Slides " src="images/sfeerfoto3.png" style="width:100%">
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("Slides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+              myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+          }
+        </script>
+
+        <button>Read more</button>
+      </div>
+
+    </div>
   </header>
 
 

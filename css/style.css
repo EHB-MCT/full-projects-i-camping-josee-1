@@ -16,6 +16,12 @@
         transform: translate(0, -30px);
     }
 
+    .headertext {
+        color: white;
+        position: relative;
+        transform: translate(10%, -150%);
+    }
+
     #menuToggle {
         display: block;
         position: fixed;
@@ -124,5 +130,26 @@
 
     #menuToggle input:checked~ul {
         transform: none;
+    }
+
+    .content {
+        text-align: center;
+        color: black;
+    }
+
+    button {
+        border: 3px solid yellow;
+        background-color: white;
+        color: yellow;
+        border-radius: 15px;
+    }
+
+    .aboutslide {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .aboutslide img {
+        border-radius: 15px;
     }
 }
