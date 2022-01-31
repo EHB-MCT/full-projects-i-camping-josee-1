@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Camping Josée</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div>
+                <img src="images/camping_josee_tuin.jpg" style="width:100%;">
+            </div>
+            <div class="logo">
+                <img src="images/final.png">
+            </div>
+            <div class="navigation">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                    </form>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="programma.html">Program</a>
+                <a href="cj.html">Cantine Josée</a>
+                <a href="contact.html">About us</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="logo2">
+                <p>"An exchange between people, communities and cultures."
+                </p>
+                <img src="images/final.png" style="width: 200px; height: auto;">
+                <H1>Camping Josée</H1>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="us">
+        <div class="word">
+            <H2>Who are we?</H2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum...
+            </p>
+            <button>Read More</button>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="item fade">
+                <img src="images/1.png">
+            </div>
+
+            <div class="item fade">
+                <img src="images/2.png">
+            </div>
+
+            <div class="item fade">
+                <img src="images/5.png">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("item");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+
+                slides[slideIndex - 1].style.display = "flex";
+            }
+        </script>
+
+
+    </div>
+    <div class="upcoming">
+        <div class="left">
+            <p>
+                Wat <br>
+                <br>
+                Course & Training <br>
+                Event <br>
+                Lecture & Conversation <br>
+                Stage & Movie <br>
+                <br>
+                For whom <br><br>
+                0-2,5 years old <br>
+                2,5-6 years old<br>
+                6-12 years old<br>
+                12-18 years old<br>
+                18+<br>
+                50+<br><br>
+                Families<br><br>
+                When<br><br>
+                Next 7 <br>
+                This weekend<br>
+                Next 30 days<br><br>
+                Extra's<br><br>
+
+                Free<br>
+                Online<br>
+
+            </p>
+        </div>
+        <div class="tegels">
+            <div class="t1">
+                <img src="images/1.png">
+                <div class="t">
+                    <h4>New year's party</h4>
+                    <p>
+                        For whom <br>
+                        0 - 99 years old
+
+                    </p> <br>
+                    <p>
+                        When <br>
+                        fri 28.01.2022 <br>
+                        from 18.00 to 23.00 h.
+
+                    </p><br>
+                    <p>
+                        Location
+                        Le Thé au Harem <br>
+                        Leuvensesteenweg 52 <br>
+                        1210 Sint-Joost-ten-Node <br>
+                    </p>
+                </div>
+
+            </div>
+            <div class="t1">
+                <img src="images/1.png">
+                <div class="t">
+                    <h4>New year's party</h4>
+                    <p>
+                        For whom <br>
+                        0 - 99 years old
+
+                    </p> <br>
+                    <p>
+                        When <br>
+                        fri 28.01.2022 <br>
+                        from 18.00 to 23.00 h.
+
+                    </p><br>
+                    <p>
+                        Location
+                        Le Thé au Harem <br>
+                        Leuvensesteenweg 52 <br>
+                        1210 Sint-Joost-ten-Node <br>
+                    </p>
+                </div>
+            </div>
+            <div class="t1">
+                <img src="images/1.png">
+                <div class="t">
+                    <h4>New year's party</h4>
+                    <p>
+                        For whom <br>
+                        0 - 99 years old
+
+                    </p> <br>
+                    <p>
+                        When <br>
+                        fri 28.01.2022 <br>
+                        from 18.00 to 23.00 h.
+
+                    </p><br>
+                    <p>
+                        Location
+                        Le Thé au Harem <br>
+                        Leuvensesteenweg 52 <br>
+                        1210 Sint-Joost-ten-Node <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
