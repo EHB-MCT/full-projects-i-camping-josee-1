@@ -6,246 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link href="js/index.js">
+  <script type="text/javascript" src="js/index.js"></script>
   <title>Camping Josée</title>
 </head>
 
 <body>
   <header>
+    <nav role="navigation">
+      <div id="menuToggle">
 
-    <div class="container">
-      <div>
-        <img src="images/background_header.jpg" style="width:100%;">
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>About us</li>
+          </a>
+          <a href="#">
+            <li>Cantine Josée</li>
+          </a>
+          <a href="#">
+            <li>Programma</li>
+          </a>
+
+        </ul>
+
       </div>
+      <div class="header">
+        <img src="images/background.png">
 
-      <div class="logo">
-        <img src="images/logo_Camping_Josée.png">
       </div>
-
-      <div class="navigation">
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-          </form>
-        </div>
-
-        <a href="index.html">Home</a>
-        <a href="#programma">Programma</a>
-        <a href="#">Cantine Josée</a>
-        <a href="#">About us</a>
-        <a href="faq.html">FAQ</a>
-      </div>
-
-      <div class="logo2">
-        <p>"An exchange between people, communities and cultures."
-        </p>
-        <img src="images/logo_Camping_Josée.png" style="width: 200px; height: auto;">
-        <H1>Camping Josée</H1>
-      </div>
-
-    </div>
-
+    </nav>
   </header>
 
-  <div class="us">
-    <div class="word">
-      <H2>Who are we?</H2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum...
-      </p>
-      <button>Read More</button>
-    </div>
 
-    <div class="slideshow-container">
-
-      <div class="item fade">
-        <img src="images/sfeerfoto1.png">
-      </div>
-
-      <div class="item fade">
-        <img src="images/sfeerfoto2.png">
-      </div>
-
-      <div class="item fade">
-        <img src="images/sfeerfoto3.png">
-      </div>
-
-      <nav role="navigation">
-        <div id="menuToggle">
-
-          <input type="checkbox" />
-
-
-          <span></span>
-          <span></span>
-          <span></span>
-
-        </div>
-
-        <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("item");
-            if (n > slides.length) {
-              slideIndex = 1
-            }
-            if (n < 1) {
-              slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-
-            slides[slideIndex - 1].style.display = "flex";
-          }
-        </script>
-    </div>
-
-    <div id="programma" class="upcoming">
-      <div class="left">
-        <p>
-          Wat <br>
-          <br>
-          Cursus & Vorming <br>
-          Evenement <br>
-          Lezing & gesprek <br>
-          Podium & Film <br>
-          <br>
-          Voor wie <br><br>
-          0-2,5 jaar <br>
-          2,5-6 jaar<br>
-          6-12 jaar<br>
-          12-18 jaar<br>
-          18+<br>
-          50+<br><br>
-          Families<br><br>
-          Wanneer<br><br>
-          Volgende 7 <br>
-          Dit weekend<br>
-          Volgende 30 dagen<br><br>
-          Extra's<br><br>
-
-          Gratis<br>
-          Online<br>
-
-        </p>
-      </div>
-
-      <div class="tegels">
-        <div class="t1">
-          <img src="images/sfeerfoto1.png">
-          <div class="t">
-            <h4>Nieuwjaars feest</h4>
-            <p>
-              Voor wie <br>
-              0 - 99 jaar
-
-            </p> <br>
-            <p>
-              Wanneer <br>
-              vr 28.01.2022 <br>
-              van 18.00 tot 23.00 u.
-
-              <ul id="menu">
-                <a href="#">
-                  <li>Home</li>
-                </a>
-                <a href="#">
-                  <li>About us</li>
-                </a>
-                <a href="#">
-                  <li>Contact</li>
-                </a>
-
-              </ul>
-          </div>
-          </nav>
-          <div>
-            <img src="images/camping_josee_tuin.jpg">
-            <h1>Camping Josée</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptate vel cupiditate architecto impedit
-              quasi
-              voluptatum, officiis eius est? Molestias impedit obcaecati temporibus excepturi debitis veritatis ab
-              provident
-              quae at!</p>
-
-            <div class="t1">
-              <img src="images/sfeerfoto1.png">
-              <div class="t">
-                <h4>Nieuwjaars feest</h4>
-                <p>
-                  Voor wie <br>
-                  0 - 99 jaar
-
-                </p> <br>
-                <p>
-                  Wanneer <br>
-                  vr 28.01.2022 <br>
-                  van 18.00 tot 23.00 u.
-
-                </p><br>
-                <p>
-                  Locatie
-                  Le Thé au Harem <br>
-                  Leuvensesteenweg 52 <br>
-                  1210 Sint-Joost-ten-Node <br>
-                </p>
-              </div>
-            </div>
-            <div class="t1">
-              <img src="images/sfeerfoto1.png">
-              <div class="t">
-                <h4>Nieuwjaars feest</h4>
-                <p>
-                  Voor wie <br>
-                  0 - 99 jaar
-
-                </p> <br>
-                <p>
-                  Wanneer <br>
-                  vr 28.01.2022 <br>
-                  van 18.00 tot 23.00 u.
-
-                </p><br>
-                <p>
-                  Locatie
-                  Le Thé au Harem <br>
-                  Leuvensesteenweg 52 <br>
-                  1210 Sint-Joost-ten-Node <br>
-                </p>
-              </div>
-            </div>
-          </div>
-          </header>
-
-        </div>
-
-        <div class="CJ">
-          <h1 id="CJ">Cantine Josée</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique ad culpa sunt dolores soluta
-            debitis
-            unde maxime corporis natus.
-          </p>
-
-          <img src="">
 
 </body>
 
