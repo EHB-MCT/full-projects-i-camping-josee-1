@@ -20,8 +20,6 @@ header {
     position: relative;
     text-align: center;
     color: white;
-    background-color: rgba(255, 255, 255, 0.4);
-
 }
 
 
@@ -31,8 +29,7 @@ header {
     width: 90px;
     height: auto;
     position: relative;
-    transform: translate(10%, -980%);
-
+    transform: translate(0%, -980%);
 }
 
 
@@ -63,12 +60,13 @@ header {
 }
 
 .navigation {
-    position: relative;
-    transform: translate(0%, -1150%);
+    position: absolute;
+    top: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     float: right;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
 }
 
 
@@ -89,7 +87,7 @@ a {
     background-color: white;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    transform: translate(0%, -20%);
+    transform: translate(0%, -10%);
 
 }
 
