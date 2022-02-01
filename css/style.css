@@ -10,8 +10,9 @@
     }
 
     .header {
+        margin: 0;
         width: 100%;
-        height: auto;
+        height: 400px;
         position: relative;
         transform: translate(0, -30px);
     }
@@ -142,6 +143,18 @@
         background-color: white;
         color: yellow;
         border-radius: 15px;
+        padding: 5px;
+    }
+
+    button:active {
+        border: 3px solid yellow;
+        background-color: yellow;
+        color: white;
+    }
+
+    .item {
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .aboutslide {
@@ -151,9 +164,20 @@
 
     .aboutslide img {
         border-radius: 15px;
+        padding: 10px;
     }
 
     .news {
         background-color: lightyellow;
+    }
+
+    .cantine {
+        background-color: white;
+        color: black;
+        margin: 2%;
+    }
+
+    .cantine img {
+        padding: 5px;
     }
 }
