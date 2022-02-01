@@ -142,6 +142,7 @@
         border: 3px solid yellow;
         background-color: white;
         color: yellow;
+        width: 70%;
         border-radius: 15px;
         padding: 5px;
     }
@@ -153,8 +154,8 @@
     }
 
     .item {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
     }
 
     .aboutslide {
@@ -174,10 +175,25 @@
     .cantine {
         background-color: white;
         color: black;
-        margin: 2%;
+        margin: 4%;
     }
 
     .cantine img {
         padding: 5px;
     }
+
+    #footer {
+        width: 100%;
+        background-color: lightsteelblue;
+        color: black;
+
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .tel {}
 }
