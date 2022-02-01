@@ -161,17 +161,17 @@
         padding: 10px;
     }
 
-    .news {
+    #news {
         background-color: lightyellow;
     }
 
-    .cantine {
+    #cantine {
         background-color: white;
         color: black;
         margin: 4%;
     }
 
-    .cantine img {
+    #cantine img {
         padding: 5px;
     }
 
@@ -183,8 +183,44 @@
     }
 
     .contact {
-        display: flex;
-        justify-content: space-evenly;
+        margin-left: 20%;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 200px 200px;
+        grid-gap: 30px;
+    }
+
+    .arange {
+        padding-bottom: 5px;
+    }
+
+    .arange img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        clear: both;
+        float: left;
+        padding-right: 2%;
+        padding-bottom: 0px;
+    }
+
+    .arange p {
+        text-align: justify;
+    }
+
+    .imag {
+        padding-bottom: 25px;
+        margin-bottom: 5px;
+    }
+
+    .imag img {
+        float: left;
+        padding-bottom: 10px;
+    }
+
+    .imag p {
+        float: right;
+
     }
 
     a {
@@ -209,4 +245,10 @@
     a.button:active {
         background-color: yellow;
     }
+
+    .social img {
+        width: 20%;
+    }
+
+
 }
