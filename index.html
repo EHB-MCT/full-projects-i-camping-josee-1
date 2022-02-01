@@ -41,7 +41,6 @@
       <div class="headerslides" style="width: 100%;">
         <img class="mySlides " src="images/background_header_2.png" style="width:100%">
         <img class="mySlides " src="images/background_header.jpg" style="width:100%">
-        <img class="mySlides " src="images/background.png" style="width:100%">
 
       </div>
       <div class="headertext">
@@ -50,9 +49,9 @@
       </div>
       <script>
         var Index = 0;
-        carousel();
+        carousel1();
 
-        function carousel() {
+        function carousel1() {
           var i;
           var x = document.getElementsByClassName("mySlides");
           for (i = 0; i < x.length; i++) {
@@ -63,7 +62,7 @@
             Index = 1
           }
           x[Index - 1].style.display = "block";
-          setTimeout(carousel, 5000);
+          setTimeout(carousel1, 4000);
         }
       </script>
     </nav>
@@ -104,26 +103,55 @@
         <button>Read more</button>
       </div>
       <div class="news">
-        <H1>Nieuws en aankondigingen</H1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, adipisci fuga voluptates qui rerum culpa
-          dignissimos, fugiat dolor eos facilis esse asperiores iusto soluta non nisi nihil consequatur nobis numquam!
-        </p>
-        <h2>t-shirt</h2>
-        <p>Wil je graag mensen ontmoeten in de
-          streek die dezelfde taal spreken of ben je
-          geïnteresseerd in andere talen?
-        </p>
+        <div class="item">
+          <H1>Nieuws en aankondigingen</H1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, adipisci fuga voluptates qui rerum culpa
+            dignissimos, fugiat dolor eos facilis esse asperiores iusto soluta non nisi nihil consequatur nobis numquam!
+          </p>
+          <h2>t-shirt</h2>
+          <p>Wil je graag mensen ontmoeten in de
+            streek die dezelfde taal spreken of ben je
+            geïnteresseerd in andere talen?
+          </p>
+        </div>
         <img src="images/tshirt.png" style="width: 60%;">
-        <p>Kom naar Camping Josée en bij ingang
-          ontvang je een t-shirt én een sticker waar
-          je je naam en je gesproken talen op schrijft.
-          Nu is het aan jou.</p>
+        <div class="item">
+          <p>Kom naar Camping Josée en bij ingang
+            ontvang je een t-shirt én een sticker waar
+            je je naam en je gesproken talen op schrijft.
+            Nu is het aan jou.</p>
+        </div>
+      </div>
+      <div class="cantine">
+        <div class="ct">
+          <h2>Cantine Josée</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer
+            adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat. Ut wisi
+            enim ad minim veniam, quis nostrud
+          </p>
+        </div>
+        <img src="images/logo_Cantine_Josée.png" style="width: 80%;">
+        <button>Doe mee</button>
       </div>
     </div>
   </header>
+  <footer>
+    <div class="contact">
+      <h3>contact</h3>
+      <div class="img">
 
+      </div>
+      <div class="text">
 
+      </div>
+    </div>
+    <div class="links">
 
+    </div>
+  </footer>
 </body>
 
 </html>
