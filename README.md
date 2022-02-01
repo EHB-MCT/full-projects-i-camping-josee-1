@@ -8,794 +8,216 @@ index.html -> html code
 css/* -> styling
 js/* -> javascript code
 js/* -> javascript directory
- <!-- search engine
- <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-          </form>
-        </div>--!>
- /*@media (min-width: 750px) {
+
+@media(min-width:300px) {
+
     body {
-        font-family: Verdana, sans-serif;
-        margin: 0
+        margin: 0;
+        padding: 0;
+
+        background: white;
+        color: #cdcdcd;
+        font-family: "Avenir Next", "Avenir", sans-serif;
     }
 
-    header {
-        background-color: white;
-        width: 100%;
-    }
-
-    .bar {
-        margin-top: 15px;
-        margin-left: 5%;
-        margin-right: 5%;
-        background-color: white;
-
-    }
-
-    .container {
-        position: relative;
-        text-align: center;
-        color: white;
-        background-color: rgba(255, 255, 255, 0.4);
-
-    }
-
-
-
-    .logo img {
-        float: left;
-        width: 90px;
-        height: auto;
-        position: relative;
-        transform: translate(10%, -980%);
-
-    }
-
-
-    .logo2 {
-
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
-
-
-
-    .navigation a {
-
-        text-decoration: none;
-        border-radius: 30px;
-        padding: 15px;
-        color: black;
-        text-decoration: none;
-        font-family: 'inter';
-        font-weight: bold;
-    }
-
-    .navigation a:hover {
-        text-decoration: underline solid black;
-    }
-
-
-    .search-container {
-        margin-top: 15px;
-    }
-
-    .navigation {
-        position: relative;
-        transform: translate(0%, -1150%);
-        display: flex;
-        justify-content: space-around;
-        float: right;
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-
-
-
-    a {
-        border-radius: 0%;
-        text-align: center;
-        color: white;
-        text-decoration: none;
-    }
-
-    .us {
+    .header {
+        margin: 0;
         width: 100%;
         height: 400px;
-        position: absolute;
-        display: flex;
-        justify-content: space-around;
-        background-color: white;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        transform: translate(0%, -10%);
-
-    }
-
-    .btn {
         position: relative;
-        transform: translate(30%, 0);
+        transform: translate(0, -30px);
     }
 
-    button {
-        float: center;
-        padding: 15px 25px;
-        font-size: 18px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: black;
-        background-color: white;
-        border: 3px solid black;
-        border-radius: 15px;
+    .headertext {
+        color: white;
+        position: relative;
+        transform: translate(10%, -150%);
     }
 
-    .us h2,
-    button {
-        text-align: center;
-        color: black;
-    }
+    #menuToggle {
+        display: block;
+        position: fixed;
+        top: 2%;
+        left: 2%;
 
-    .item img {
-        width: 500px;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
+        z-index: 1;
 
-    .word {
-        flex: 1;
-        width: 50%;
-        color: black;
-        font-size: 15px;
-        padding: 10px 12px;
-        bottom: 8px;
-        text-align: left;
-        margin-left: 5%;
-        margin-top: 10%;
-    }
-
-    .slideshow-container {
-        width: 50%;
-        margin-top: 10%;
-    }
-
-    .prev,
-    .next {
-        padding-left: 33%;
-        cursor: pointer;
-        top: 50%;
-        width: auto;
-        color: green;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
+        -webkit-user-select: none;
         user-select: none;
     }
 
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @media only screen and (max-width: 300px) {
-
-        .prev,
-        .next,
-        .text {
-            font-size: 11px
-        }
-    }
-
-    .upcoming {
-        background-color: olive;
-        width: 100%;
-        height: auto;
-        position: absolute;
-        display: flex;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        transform: translate(0%, 35%);
-    }
-
-    .tegels h2 {
-        position: relative;
-        transform: translate(20%, -10%);
-    }
-
-    .tegels {
-        flex: 5;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        margin-top: 10%;
-
-    }
-
-
-
-    .t1 {
-        margin-top: 15%;
-        text-align: center;
-        background-color: white;
-        width: fit-content;
-        height: fit-content;
-        border-radius: 30px;
-        padding-bottom: 5px;
-    }
-
-    .t1 img {
-        position: relative;
-        transform: translate(0, -20%);
-        border-radius: 30px;
-        width: fit-content;
-    }
-
-    h2 {
-        text-align: right;
-        color: white;
-    }
-
-    .left {
-        flex: 1;
-        background-color: darkgreen;
-        border-top-left-radius: 30px;
-
-    }
-
-    .left p {
-        text-align: left;
-        color: white;
-        margin-left: 8%;
-    }
-}
-
-@media (max-width: 1800px) {
-    body {
-        font-family: Verdana, sans-serif;
-        margin: 0
-    }
-
-    header {
-        background-color: white;
-        width: 100%;
-    }
-
-    .bar {
-        margin-top: 15px;
-        margin-left: 5%;
-        margin-right: 5%;
-        background-color: white;
-
-    }
-
-    .container {
-        position: relative;
-        text-align: center;
-        color: white;
-        background-color: rgba(255, 255, 255, 0.4);
-
-    }
-
-
-
-    .logo img {
-        float: left;
-        width: 90px;
-        height: auto;
-        position: relative;
-        transform: translate(10%, -980%);
-
-    }
-
-
-    .logo2 {
-
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
-
-
-
-    .navigation a {
-
+    #menuToggle a {
         text-decoration: none;
-        border-radius: 30px;
-        padding: 15px;
+        color: #232323;
+
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover {
+        color: blue;
+    }
+
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0;
+        z-index: 2;
+
+        -webkit-touch-callout: none;
+    }
+
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: white;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: black;
+    }
+
+
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
+
+    .content {
+        text-align: center;
         color: black;
-        text-decoration: none;
-        font-family: 'inter';
-        font-weight: bold;
-    }
-
-    .navigation a:hover {
-        text-decoration: underline solid black;
-    }
-
-
-    .search-container {
-        margin-top: 15px;
-    }
-
-    .navigation {
-        position: relative;
-        transform: translate(0%, -1150%);
-        display: flex;
-        justify-content: space-around;
-        float: right;
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-
-
-
-    a {
-        border-radius: 0%;
-        text-align: center;
-        color: white;
-        text-decoration: none;
-    }
-
-    .us {
-        width: 100%;
-        height: 400px;
-        position: absolute;
-        display: flex;
-        justify-content: space-around;
-        background-color: white;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        transform: translate(0%, -20%);
-
-    }
-
-    .btn {
-        position: relative;
-        transform: translate(39%, 0);
     }
 
     button {
-        float: center;
-        padding: 15px 25px;
-        font-size: 18px;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        outline: none;
-        color: black;
+        border: 3px solid yellow;
         background-color: white;
-        border: 3px solid black;
+        color: yellow;
+        width: 70%;
         border-radius: 15px;
+        padding: 5px;
     }
 
-    .us h2,
-    button {
-        text-align: center;
-        color: black;
+    button:active {
+        border: 3px solid yellow;
+        background-color: yellow;
+        color: white;
     }
 
-    .item img {
-        width: 500px;
-        padding-right: 20px;
-        padding-left: 20px;
+    .item {
+        margin-left: 4%;
+        margin-right: 4%;
     }
 
-    .word {
-        flex: 1;
-        width: 50%;
-        color: black;
-        font-size: 15px;
-        padding: 10px 12px;
-        bottom: 8px;
-        text-align: left;
-        margin-left: 5%;
-        margin-top: 10%;
+    .aboutslide {
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
-    .slideshow-container {
-        width: 50%;
-        margin-top: 10%;
-    }
-
-    .prev,
-    .next {
-        padding-left: 170px;
-        cursor: pointer;
-        top: 50%;
-        width: auto;
-        color: green;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-
-    @media only screen and (max-width: 300px) {
-
-        .prev,
-        .next,
-        .text {
-            font-size: 11px
-        }
-    }
-
-    .upcoming {
-        background-color: olive;
-        width: 100%;
-        height: auto;
-        position: absolute;
-        display: flex;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        transform: translate(0%, 35%);
-    }
-
-    .tegels h2 {
-        position: relative;
-        transform: translate(20%, -10%);
-    }
-
-    .tegels {
-        flex: 5;
-        display: grid;
-        grid-template-columns: auto auto auto;
+    .aboutslide img {
+        border-radius: 15px;
         padding: 10px;
-        margin-top: 10%;
-
     }
 
+    .news {
+        background-color: lightyellow;
+    }
 
-
-    .t1 {
-        margin-top: 15%;
-        text-align: center;
+    .cantine {
         background-color: white;
-        width: fit-content;
-        height: fit-content;
-        border-radius: 30px;
-        padding: 9px;
+        color: black;
+        margin: 4%;
     }
 
-    .t1 img {
-        position: relative;
-        transform: translate(0, -26%);
-        border-radius: 30px;
-        width: fit-content;
+    .cantine img {
+        padding: 5px;
     }
 
-    .left h2 {
-        width: 400px;
-        transform: translate(160%, 0);
-        color: white;
-    }
-
-    .left {
-        flex: 1;
-        background-color: darkgreen;
-        border-top-left-radius: 30px;
+    #footer {
+        width: 100%;
+        background-color: lightsteelblue;
+        color: black;
 
     }
 
-    .left p {
-        text-align: left;
-        color: white;
-        margin-left: 8%;
-    }*/
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+    .tel {}
+
+    a.button {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        border-radius: 15px;
+        text-decoration: none;
+        color: initial;
+        padding: 5px 10px;
+        background-color: yellow;
+        text-align: center;
+        width: 70%;
+    }
 }
- <header>
-    <div class="container">
-      <div>
-        <img src="images/camping_josee_tuin.jpg">
-      </div>
-      <div class="logo">
-      </div>
-      <div class="navigation">
-
-        <a href="index.html">Home</a>
-        <a href="programma.html">Programma</a>
-        <a href="cj.html">Cantine Josée</a>
-        <a href="contact.html">About us</a>
-        <a href="faq.html">FAQ</a>
-      </div>
-      <div class="logo2">
-        <H1>Camping Josée</H1>
-      </div>
-    </div>
-    </div>
-  </header>
-  <div class="content">
-    <div class="us">
-      <div class="word">
-        <H2>Who are we?</H2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum...
-        </p>
-
-      </div>
-      <div class="slideshow">
-
-        <div class="item fade">
-          <img src="images/1.png">
-        </div>
-
-        <div class="item fade">
-          <img src="images/1.png">
-        </div>
-
-        <div class="item fade">
-          <img src="images/1.png">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      </div>
-      <div class="btn">
-        <button>Read More</button>
-
-      </div>
-      <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("item");
-          if (n > slides.length) {
-            slideIndex = 1
-          }
-          if (n < 1) {
-            slideIndex = slides.length
-          }
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-
-          slides[slideIndex - 1].style.display = "flex";
-        }
-      </script>
-
-
-    </div>
-    <div class="upcoming">
-      <div class="left">
-        <h2>Our upcoming activities</h2>
-        <p>
-          Wat <br>
-          <br>
-          Cursus & Vorming <br>
-          Evenement <br>
-          Lezing & gesprek <br>
-          Podium & Film <br>
-          <br>
-          Voor wie <br><br>
-          0-2,5 jaar <br>
-          2,5-6 jaar<br>
-          6-12 jaar<br>
-          12-18 jaar<br>
-          18+<br>
-          50+<br><br>
-          Families<br><br>
-          Wanneer<br><br>
-          Volgende 7 <br>
-          Dit weekend<br>
-          Volgende 30 dagen<br><br>
-          Extra's<br><br>
-
-          Gratis<br>
-          Online<br>
-
-        </p>
-      </div>
-
-      <div class="tegels">
-
-        <div class="t1">
-          <img src="images/1.png">
-          <div class="t">
-            <h4>Nieuwjaars feest</h4>
-            <p>
-              Voor wie <br>
-              0 - 99 jaar
-
-            </p> <br>
-            <p>
-              Wanneer <br>
-              vr 28.01.2022 <br>
-              van 18.00 tot 23.00 u.
-
-            </p><br>
-            <p>
-              Locatie
-              Le Thé au Harem <br>
-              Leuvensesteenweg 52 <br>
-              1210 Sint-Joost-ten-Node <br>
-            </p>
-            <button>More details</button>
-
-          </div>
-
-        </div>
-        <div class="t1">
-          <img src="images/1.png">
-          <h4>Nieuwjaars feest</h4>
-          <p>
-            Voor wie <br>
-            0 - 99 jaar
-
-          </p> <br>
-          <p>
-            Wanneer <br>
-            vr 28.01.2022 <br>
-            van 18.00 tot 23.00 u.
-
-          </p><br>
-          <p>
-            Locatie
-            Le Thé au Harem <br>
-            Leuvensesteenweg 52 <br>
-            1210 Sint-Joost-ten-Node <br>
-          </p>
-          <button>More details</button>
-        </div>
-        <div class="t1">
-          <img src="images/1.png">
-          <h4>Nieuwjaars feest</h4>
-          <p>
-            Voor wie <br>
-            0 - 99 jaar
-
-          </p> <br>
-          <p>
-            Wanneer <br>
-            vr 28.01.2022 <br>
-            van 18.00 tot 23.00 u.
-
-          </p><br>
-          <p>
-            Locatie
-            Le Thé au Harem <br>
-            Leuvensesteenweg 52 <br>
-            1210 Sint-Joost-ten-Node <br>
-          </p>
-          <button>More details</button>
-
-        </div>
-        <div class="t1">
-          <img src="images/1.png">
-          <div class="t">
-            <h4>Nieuwjaars feest</h4>
-            <p>
-              Voor wie <br>
-              0 - 99 jaar
-
-            </p> <br>
-            <p>
-              Wanneer <br>
-              vr 28.01.2022 <br>
-              van 18.00 tot 23.00 u.
-
-            </p><br>
-            <p>
-              Locatie
-              Le Thé au Harem <br>
-              Leuvensesteenweg 52 <br>
-              1210 Sint-Joost-ten-Node <br>
-            </p>
-            <button>More details</button>
-
-          </div>
-
-        </div>
-        <div class="t1">
-          <img src="images/1.png">
-          <div class="t">
-            <h4>Nieuwjaars feest</h4>
-            <p>
-              Voor wie <br>
-              0 - 99 jaar
-
-            </p> <br>
-            <p>
-              Wanneer <br>
-              vr 28.01.2022 <br>
-              van 18.00 tot 23.00 u.
-
-            </p><br>
-            <p>
-              Locatie
-              Le Thé au Harem <br>
-              Leuvensesteenweg 52 <br>
-              1210 Sint-Joost-ten-Node <br>
-            </p>
-            <button>More details</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
-
-  </footer>
