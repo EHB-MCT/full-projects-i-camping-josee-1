@@ -263,29 +263,30 @@ a.button:active {
     vertical-align: middle;
 }
 
-@media (min-width:768px) {
+@media (min-width:480px) {
     p {
         text-align: left;
     }
 
     .about-us img {
-        width: 40%;
+        width: 30%;
     }
 
     .about1 {
         display: flex;
         margin: 0 auto;
         width: 80%;
-
     }
 
     .about1 img {
         flex: 1;
         padding: 1%;
         margin-left: 10px;
+        height: max-content;
+
     }
 
-    .about1 p {
+    s .about1 p {
         padding: 70px 0;
         margin-left: 10px;
     }
@@ -329,5 +330,11 @@ a.button:active {
     .about3 p {
         padding: 70px 0;
         margin-left: 10px;
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        background-color: red;
     }
 }
