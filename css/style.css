@@ -1,7 +1,5 @@
 body {
-    margin: 0 auto;
-    padding: 0;
-
+    margin: 0;
     background: white;
     color: #cdcdcd;
     font-family: "Avenir Next", "Avenir", sans-serif;
@@ -406,6 +404,8 @@ a.button {
     text-align: center;
     width: 70%;
     border: 3px solid yellow;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 a.button:active {
@@ -414,4 +414,21 @@ a.button:active {
 
 .social img {
     width: 20%;
+}
+
+.search {
+    background-color: white;
+    display: flex;
+    width: 100%;
+
+}
+
+.container {
+    flex: 1;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
