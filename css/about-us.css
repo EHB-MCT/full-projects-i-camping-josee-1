@@ -337,6 +337,6 @@ a.button:active {
 
 @media (min-width:768px) {
     body {
-        background-color: red;
+        background-color: white;
     }
 }
