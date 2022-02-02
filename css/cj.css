@@ -150,59 +150,79 @@ button:active {
     color: white;
 }
 
-.search {
-    background-color: white;
+#footer {
     width: 100%;
-}
-
-.filterDiv {
-    float: left;
-    background-color: white;
+    background-color: lightsteelblue;
     color: black;
-    border: 3px solid yellow;
-    width: 40%;
-    height: 40%;
-    text-align: center;
-    margin: 2px;
-    display: none;
-    border-radius: 15px;
-    margin-left: 5%;
 
 }
 
-.show {
+.contact {
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px 200px;
+    grid-gap: 30px;
+}
+
+.arange {
+    padding-bottom: 5px;
+}
+
+.arange img {
     display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    clear: both;
+    float: left;
+    padding-right: 2%;
+    padding-bottom: 0px;
 }
 
-.myBtnContainer {
-
-    margin-left: 2%;
+.arange p {
+    text-align: justify;
 }
 
-.container {
-    margin-top: 20px;
-    overflow: hidden;
+.imag {
+    padding-bottom: 25px;
+    margin-bottom: 5px;
 }
 
-.btn {
-    border: none;
-    outline: none;
-    padding: 12px;
+.imag img {
+    float: left;
+    padding-bottom: 10px;
+}
+
+.imag p {
+    float: right;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
     background-color: white;
-    color: black;
+    text-align: center;
+    width: 70%;
     border: 3px solid yellow;
-    cursor: pointer;
-    width: 18%;
-    height: 15%;
-    font-size: auto;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-
-.btn.active {
+a.button:active {
     background-color: yellow;
-    color: black;
 }
 
 .social img {
-    width: 35px;
+    width: 20%;
 }
