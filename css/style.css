@@ -484,6 +484,11 @@ a.button:active {
 
 }
 
+.Pr h1 {
+    text-align: center;
+    color: black;
+}
+
 .programma button {
     background-color: lightyellow;
 }
