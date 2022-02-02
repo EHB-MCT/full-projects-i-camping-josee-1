@@ -269,7 +269,7 @@ a.button:active {
     }
 
     .about-us img {
-        width: 30%;
+        width: 40%;
     }
 
     .about1 {
@@ -294,15 +294,15 @@ a.button:active {
     .about2 {
         display: flex;
         margin: 0 auto;
-        width: 70%;
-
+        width: 90%;
+        align-items: center;
     }
 
     .about2 img {
         flex: 1;
         padding: 1%;
         margin-left: 10px;
-        margin-bottom: 10px;
+        height: max-content;
     }
 
     .about2 p {
@@ -325,6 +325,8 @@ a.button:active {
         flex: 1;
         padding: 1%;
         margin-left: 10px;
+        height: max-content;
+
     }
 
     .about3 p {
