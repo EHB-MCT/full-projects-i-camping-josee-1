@@ -268,6 +268,10 @@ a.button:active {
         text-align: left;
     }
 
+    .about-us img {
+        width: 40%;
+    }
+
     .about1 {
         display: flex;
         margin: 0 auto;
@@ -289,7 +293,7 @@ a.button:active {
     .about2 {
         display: flex;
         margin: 0 auto;
-        width: 80%;
+        width: 70%;
 
     }
 
@@ -314,7 +318,6 @@ a.button:active {
         display: flex;
         margin: 0 auto;
         width: 80%;
-
     }
 
     .about3 img {
