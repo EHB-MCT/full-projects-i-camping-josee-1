@@ -5,11 +5,260 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Camping Josée Programma</title>
 </head>
 
 <body>
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
 
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>About us</li>
+                    </a>
+                    <a href="#">
+                        <li>Cantine Josée</li>
+                    </a>
+                    <a href="programma.html">
+                        <li>Programma</li>
+                    </a>
+                    <a href="faq.html">
+                        <li>FAQ</li>
+                    </a>
+
+                </ul>
+
+            </div>
+            <div class="headerslides" style="width: 100%;">
+                <img class="mySlides " src="images/background_header_2.png" style="width:100%">
+                <img class="mySlides " src="images/sfeerfoto9.png" style="width:100%">
+
+            </div>
+            <div class="headertext">
+                <h1>Camping Josée</h1>
+                <p>Slogan</p>
+            </div>
+            <script>
+                var Index = 0;
+                carousel1();
+
+                function carousel1() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    Index++;
+                    if (Index > x.length) {
+                        Index = 1
+                    }
+                    x[Index - 1].style.display = "block";
+                    setTimeout(carousel1, 4000);
+                }
+            </script>
+            <div class="search">
+                <script>
+                    filterSelection("all")
+
+                    function filterSelection(c) {
+                        var x, i;
+                        x = document.getElementsByClassName("filterDiv");
+                        if (c == "all") c = "";
+                        for (i = 0; i < x.length; i++) {
+                            w3RemoveClass(x[i], "show");
+                            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                        }
+                    }
+
+                    function w3AddClass(element, name) {
+                        var i, arr1, arr2;
+                        arr1 = element.className.split(" ");
+                        arr2 = name.split(" ");
+                        for (i = 0; i < arr2.length; i++) {
+                            if (arr1.indexOf(arr2[i]) == -1) {
+                                element.className += " " + arr2[i];
+                            }
+                        }
+                    }
+
+                    function w3RemoveClass(element, name) {
+                        var i, arr1, arr2;
+                        arr1 = element.className.split(" ");
+                        arr2 = name.split(" ");
+                        for (i = 0; i < arr2.length; i++) {
+                            while (arr1.indexOf(arr2[i]) > -1) {
+                                arr1.splice(arr1.indexOf(arr2[i]), 1);
+                            }
+                        }
+                        element.className = arr1.join(" ");
+                    }
+
+                    var btnContainer = document.getElementById("myBtnContainer");
+                    var btns = btnContainer.getElementsByClassName("btn");
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click", function () {
+                            var current = document.getElementsByClassName("active");
+                            current[0].className = current[0].className.replace(" active", "");
+                            this.className += " active";
+                        });
+                    }
+                </script>
+                <div>
+
+                    <div id="myBtnContainer">
+                        <button class="btn" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('ma')"> Maandag</button>
+                        <button class="btn" onclick="filterSelection('di')"> Dinsdag</button>
+                        <button class="btn" onclick="filterSelection('wo')"> Woensdag</button>
+                        <button class="btn" onclick="filterSelection('do')"> Donderdag</button>
+                    </div>
+
+                    <div class="container">
+                        <div class="filterDiv ma">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv do wo">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv ma">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv do">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv ma di">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv do">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv di">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv di">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv wo">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv wo di">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv wo">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv wo">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                        <div class="filterDiv di">
+                            <img src="images/sfeerfoto4.png"
+                                style="width: 100%; border-top-left-radius: 15px;border-top-right-radius: 15px;">
+                            <P>Lezing & gesprek</P>
+                            <h5>Nieuwjaarsfeest</h5>
+                            <p>
+                                Leuvensesteenweg 52, 1210 <br>
+                                17:00 - 20:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
 </body>
 
 </html>

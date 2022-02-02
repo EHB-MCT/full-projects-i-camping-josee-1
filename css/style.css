@@ -433,6 +433,9 @@ a.button:active {
     text-align: center;
     margin: 2px;
     display: none;
+    border-radius: 15px;
+    margin-left: 5%;
+
 }
 
 .show {
@@ -440,8 +443,8 @@ a.button:active {
 }
 
 .myBtnContainer {
-    display: flex;
-    justify-content: space-between;
+
+    margin-left: 2%;
 }
 
 .container {
