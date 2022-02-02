@@ -281,4 +281,8 @@ a.button:active {
     .about-us img {
         width: 25%
     }
+
+    .social img {
+        width: 35px;
+    }
 }
