@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+
+
 body {
     margin: 0 auto;
     text-align: center;
@@ -117,16 +119,19 @@ body {
 }
 
 .about-us {
-    margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
 .about-us img {
-    width: 230px;
+    width: 40%;
+    border-radius: 10px;
+
 }
 
 .about1 {
+    margin: 5%;
+
     background-color: white;
     padding-bottom: 30px;
 }
@@ -137,7 +142,7 @@ body {
 }
 
 .about1 h1+p {
-    margin: 0 auto;
+    margin: 0 auo;
     width: 70%;
 }
 
@@ -147,9 +152,8 @@ body {
     padding-bottom: 30px;
 }
 
-.about2 img {
+.about2 img:first {
     margin-top: 30px;
-    border-radius: 10px;
 }
 
 .about2 p {
@@ -246,6 +250,75 @@ a.button:active {
     background-color: yellow;
 }
 
+.social {
+    padding-top: 10%;
+    width: 100%;
+}
+
 .social img {
     width: 20%;
+}
+
+@media (min-width:768px) {
+    p {
+        text-align: left;
+    }
+
+    .about1 {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+
+    }
+
+    .about1 img {
+        flex: 1;
+        padding: 1%;
+        margin-left: 10px;
+    }
+
+    .about1 p {
+        padding: 70px 0;
+        margin-left: 10px;
+    }
+
+    .about2 {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+
+    }
+
+    .about2 img {
+        flex: 1;
+        padding: 1%;
+        margin-left: 10px;
+    }
+
+    .about2 p {
+        padding: 70px 0;
+        margin-left: 10px;
+    }
+
+    .about2-wide {
+        background-color: lightyellow;
+    }
+
+    .about3 {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+
+    }
+
+    .about3 img {
+        flex: 1;
+        padding: 1%;
+        margin-left: 10px;
+    }
+
+    .about3 p {
+        padding: 70px 0;
+        margin-left: 10px;
+    }
 }
