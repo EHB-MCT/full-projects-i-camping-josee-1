@@ -472,3 +472,23 @@ a.button:active {
     background-color: yellow;
     color: black;
 }
+
+.btn:checked {
+    background-color: yellow;
+    color: black;
+
+}
+
+.programma {
+    color: black;
+
+}
+
+.Pr h1 {
+    text-align: center;
+    color: black;
+}
+
+.programma button {
+    background-color: lightyellow;
+}
