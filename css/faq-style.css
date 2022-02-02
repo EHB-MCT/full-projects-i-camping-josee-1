@@ -122,10 +122,6 @@ body {
     margin-bottom: 50px;
 }
 
-.about-us img {
-    width: 230px;
-}
-
 .about1 {
     background-color: white;
     padding-bottom: 30px;
@@ -134,6 +130,7 @@ body {
 .about1 img {
     margin-top: 30px;
     border-radius: 10px;
+    width: 0;
 }
 
 .about1 h1+p {
@@ -240,7 +237,7 @@ a.button:active {
     width: 20%;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
 
     .about1 h1 {
         font-size: 50px;
@@ -279,7 +276,7 @@ a.button:active {
     }
 
     .about-us img {
-        width: 25%
+        width: 50%
     }
 
     .social img {
