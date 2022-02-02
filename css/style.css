@@ -332,7 +332,6 @@ button:active {
 #cantine {
     background-color: white;
     color: black;
-    margin: 4%;
 }
 
 #cantine img {
@@ -418,17 +417,52 @@ a.button:active {
 
 .search {
     background-color: white;
-    display: flex;
     width: 100%;
-
 }
 
+
 .container {
-    flex: 1;
     cursor: pointer;
     font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
 }
