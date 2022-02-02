@@ -40,7 +40,7 @@
       </div>
       <div class="headerslides" style="width: 100%;">
         <img class="mySlides " src="images/background_header_2.png" style="width:100%">
-        <img class="mySlides " src="images/background_header.jpg" style="width:100%">
+        <img class="mySlides " src="images/sfeerfoto9.png" style="width:100%">
 
       </div>
       <div class="headertext">
@@ -108,6 +108,40 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, adipisci fuga voluptates qui rerum culpa
             dignissimos, fugiat dolor eos facilis esse asperiores iusto soluta non nisi nihil consequatur nobis numquam!
           </p>
+          <div class="search">
+            <script>
+              function myFunction() {
+                var checkBox = document.getElementById("myCheck");
+                var text = document.getElementById("text");
+                if (checkBox.checked == true) {
+                  text.style.display = "block";
+                } else {
+                  text.style.display = "none";
+                }
+              }
+            </script>
+            <div class="day">
+              <label for="myCheck">Maandag</label>
+              <input type="checkbox" id="myCheck" onclick="myFunction()">
+              <p id="text" style="display:none">Checkbox is CHECKED!</p><label for="myCheck">Checkbox:</label>
+            </div>
+            <div class="day">
+              <label for="myCheck">Dinsdag</label>
+              <input type="checkbox" id="myCheck" onclick="myFunction()">
+              <p id="text" style="display:none">Checkbox is CHECKED!</p><label for="myCheck">Checkbox:</label>
+            </div>
+            <div class="day">
+              <label for="myCheck">Woensdag</label>
+              <input type="checkbox" id="myCheck" onclick="myFunction()">
+              <p id="text" style="display:none">Checkbox is CHECKED!</p><label for="myCheck">Checkbox:</label>
+            </div>
+            <div class="day">
+              <label for="myCheck">Donderdag</label>
+              <input type="checkbox" id="myCheck" onclick="myFunction()">
+              <p id="text" style="display:none">Checkbox is CHECKED!</p><label for="myCheck">Checkbox:</label>
+            </div>
+          </div>
+
           <h2>t-shirt</h2>
           <p>Wil je graag mensen ontmoeten in de
             streek die dezelfde taal spreken of ben je
@@ -138,19 +172,48 @@
       </div>
     </div>
   </header>
-  <footer>
-    <div class="contact">
-      <h3>contact</h3>
-      <div class="img">
-
+  <footer id="footer">
+    <Div class="contact">
+      <div class="tel">
+        <h3>contact </h3>
+        <div class="arange">
+          <div class="imag">
+            <img src="images/telefoon.png" style="width: 28px;">
+            <p> 02 217 08 82
+            </p>
+          </div>
+          <div class="imag">
+            <img src="images/mail.png" style="width: 28px;">
+            <p>
+              tennoey@vgc.be
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="text">
-
+      <div class="tel">
+        <h3>andere links</h3>
+        <a href="#">
+        </a>
+        Home
+        </a><br> <br>
+        <a href="#">
+        </a>
+        <a href="#">
+        </a>
+        About us
+        </a><br><br>
+        <a href="#cantine">
+          Cantine Josée
+        </a><br><br>
+        <a href="#">
+          Programma
+        </a>
       </div>
-    </div>
-    <div class="links">
-
-    </div>
+      <div class="social">
+        <h3>Sociale media</h3>
+        <a href="#"><img src="images/instagram.png"></a>
+        <a href="#"><img src="images/Facebook.png"></a>
+      </div>
   </footer>
 </body>
 
