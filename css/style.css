@@ -186,6 +186,7 @@ button:active {
 
 .news {
     background-color: white;
+    display: flex;
 }
 
 .cantine {
@@ -539,6 +540,7 @@ a.button:active {
 
     .news {
         align-items: center;
+        display: flex;
     }
 
     #footer {
@@ -610,4 +612,12 @@ a.button:active {
         margin-left: 35%;
     }
 
+    .yomom {
+        flex: 1;
+    }
+
+    .fu {
+        flex: 1;
+        float: right;
+    }
 }
