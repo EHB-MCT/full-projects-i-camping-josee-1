@@ -287,3 +287,23 @@ a.button:active {
         width: 35px;
     }
 }
+
+@media (min-width:1280px) {
+    .about3 {
+        padding-bottom: 100px;
+        text-align: left;
+    }
+
+    .about3 h3 {
+        font-size: 25px;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 0%;
+    }
+
+    .about3 p {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+}
