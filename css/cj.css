@@ -1,24 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body {
-    margin: 0;
-    background: white;
-    color: #cdcdcd;
+    margin: 0 auto;
+    text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
 
-.header {
-    margin: 0;
-    width: 100%;
-    height: 400px;
-    position: relative;
-    transform: translate(0, -30px);
-}
-
-.headertext {
-    color: white;
-    position: relative;
-    transform: translate(10%, -150%);
+h3 {
+    margin: 0px 5%;
 }
 
 #menuToggle {
@@ -69,7 +58,7 @@ body {
     margin-bottom: 5px;
     position: relative;
 
-    background: white;
+    background: black;
     border-radius: 3px;
 
     z-index: 1;
@@ -131,39 +120,13 @@ body {
     transform: none;
 }
 
-.content {
-    text-align: center;
-    color: black;
-}
-
-button {
-    border: 3px solid yellow;
-    background-color: white;
-    color: yellow;
-    border-radius: 15px;
-    padding: 5px;
-}
-
-button:active {
-    border: 3px solid yellow;
-    background-color: yellow;
-    color: white;
-}
-
 .about-us {
+    margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
-.about-us img {
-    width: 70%;
-    border-radius: 10px;
-
-}
-
 .about1 {
-    margin: 5%;
-
     background-color: white;
     padding-bottom: 30px;
 }
@@ -171,10 +134,11 @@ button:active {
 .about1 img {
     margin-top: 30px;
     border-radius: 10px;
+    width: 0;
 }
 
 .about1 h1+p {
-    margin: 0 auo;
+    margin: 0 auto;
     width: 70%;
 }
 
@@ -184,29 +148,15 @@ button:active {
     padding-bottom: 30px;
 }
 
-.about2 img:first {
-    margin-top: 30px;
-}
-
-.about2-widet {
-    display: none;
-}
-
 .about2 p {
     margin: 0 auto;
     width: 70%;
-    margin-bottom: 30px;
 }
 
 .about3 {
     background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.about3 img {
-    margin-top: 30px;
-    border-radius: 10px;
 }
 
 .about3 p {
@@ -222,7 +172,7 @@ button:active {
 }
 
 .contact {
-    margin-left: 10%;
+    margin-left: 20%;
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: 200px 200px;
@@ -238,13 +188,28 @@ button:active {
     margin: 0 auto;
     padding-bottom: 15px;
     clear: both;
+    float: left;
     padding-right: 2%;
     padding-bottom: 0px;
 }
 
+.arange p {
+    text-align: justify;
+}
+
+.imag {
+    padding-bottom: 25px;
+    margin-bottom: 5px;
+}
+
 .imag img {
-    align-items: center;
+    float: left;
     padding-bottom: 10px;
+}
+
+.imag p {
+    float: right;
+
 }
 
 a {
@@ -272,19 +237,78 @@ a.button:active {
     background-color: yellow;
 }
 
-.social {
-    padding-top: 10%;
-    width: 100%;
-}
-
 .social img {
-    width: 25px;
+    width: 20%;
 }
 
-.tel {
-    align-content: center;
+@media (min-width: 768px) {
+
+    .about1 h1 {
+        font-size: 50px;
+    }
+
+    .about1 h2 {
+        font-size: 30px;
+    }
+
+    .about2 {
+        padding-bottom: 100px;
+        text-align: left;
+    }
+
+    .about3 {
+        padding-bottom: 100px;
+        text-align: left;
+    }
+
+    .about2 h3 {
+        font-size: 25px;
+        margin-left: 15%;
+        margin-bottom: 20px;
+    }
+
+    .about3 h3 {
+        font-size: 25px;
+        margin-right: 15%;
+    }
+
+    .about2 p {
+        font-size: 20px;
+    }
+
+    .about3 p {
+        font-size: 20px;
+    }
+
+    .about-us img {
+        width: 25%
+    }
+
+    .social img {
+        width: 35px;
+    }
+
+    .about3 a {
+        margin-left: 200px;
+    }
 }
 
-.arange {
-    align-content: center;
+@media (min-width:1280px) {
+    .about3 {
+        padding-bottom: 100px;
+        text-align: left;
+    }
+
+    .about3 h3 {
+        font-size: 25px;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 0%;
+    }
+
+    .about3 p {
+        margin: 0 auto;
+        width: 70%;
+    }
+
 }
