@@ -418,14 +418,17 @@ a.button:active {
         display: none;
     }
 
-    #desktopnav {
-        background-color: lightyellow;
+    .desktopnav {
         display: flex;
-        height: 50px;
+        position: absolute;
+
+
     }
 
     .logo {
+
         flex: 1;
+        z-index: 10;
     }
 
     .logo img {
@@ -436,17 +439,57 @@ a.button:active {
     }
 
     .nav {
-        text-decoration: none;
-        color: black;
-        float: right;
-        flex: 3;
-        width: 100%;
+
+        flex: 1;
+        z-index: 10;
 
     }
+
+    .nav ul {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .nav li {
+        text-decoration: none;
+        float: left;
+    }
+
+    .nav li a {
+
+        display: block;
+        color: white;
+        padding: 0px 20px;
+
+    }
+
+    .nav a {
+        text-decoration: none;
+    }
+
+
+    /*
+
+    .nav {
+        text-decoration: none;
+        float: right;
+        width: 100%;
+        z-index: 10;
+        
+    }
+
+    .nav ul {}
 
     .nav li {
         padding-left: 1%;
         font-size: larger;
         display: inline;
+        z-index: 10;
+        color: white;
+
     }
+*/
 }
