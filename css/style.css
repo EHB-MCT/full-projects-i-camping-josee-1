@@ -14,7 +14,9 @@
         display: none;
     }
 
-
+    .cantine img {
+        width: 80%;
+    }
 }
 
 #menuToggle {
@@ -520,4 +522,67 @@ a.button:active {
     #footer {
         font-size: 20px;
     }
+
+    .cam {
+        display: flex;
+        text-align: left;
+        margin-left: 5%;
+
+    }
+
+    .about {
+        flex: 1;
+    }
+
+    .aboutslide {
+        width: 50%;
+        margin-right: 5%;
+    }
+
+    .programma {
+        text-align: left;
+        width: 50%;
+        margin-left: 50%;
+    }
+
+    .programma button {
+        width: 30%;
+    }
+
+    .tshirt {
+        display: flex;
+
+    }
+
+    .foto {
+        margin-top: 5%;
+        width: 40%;
+        height: auto;
+
+    }
+
+    .it {
+        text-align: left;
+        flex: 1;
+    }
+
+    .ct {
+        text-align: left;
+        margin-left: 2%;
+    }
+
+    .cantine img {
+        padding: 2%;
+        width: 30%;
+        height: 49%;
+    }
+
+    .cantine {
+        display: flex;
+    }
+
+    .but {
+        width: 30%;
+    }
+
 }
