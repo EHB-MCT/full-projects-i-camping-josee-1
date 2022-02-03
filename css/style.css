@@ -453,7 +453,7 @@ a.button:active {
 
     }
 
-    .fuu ul {
+    .nav ul {
 
         list-style-type: none;
         margin: 0;
@@ -461,25 +461,37 @@ a.button:active {
         text-decoration: none;
     }
 
-    .fuu li {
-        text-decoration: none;
+    .fuu li a {
         float: left;
     }
 
-    .fuu li a {
+    .fuu ul {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+
+    .nav li {
+        text-decoration: none;
+        float: left;
+        padding: 0px 10px;
+    }
+
+    .nav li a {
 
         display: block;
         color: white;
-        padding: 0px 10px;
+
 
     }
 
     .fuu a {
         text-decoration: none;
     }
+}
 
-
-    /*
+/*
 
     .nav {
         text-decoration: none;
@@ -500,4 +512,11 @@ a.button:active {
 
     }
 */
+
+
+@media (min-width:768px) {
+
+    #footer {
+        font-size: 20px;
+    }
 }
