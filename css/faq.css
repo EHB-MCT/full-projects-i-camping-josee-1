@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+.headertext {
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
 body {
     margin: 0 auto;
     text-align: center;
@@ -260,6 +269,19 @@ a.button:active {
 }
 
 @media (min-width: 768px) {
+    .headertext {
+        font-weight: bold;
+        font-size: large;
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
     #menu {
         display: none;
     }
@@ -269,9 +291,10 @@ a.button:active {
     }
 
     .desktopnav {
+        width: 100%;
         display: flex;
         position: absolute;
-
+        background-color: rgba(255, 255, 255, 0.4);
     }
 
     .logo {
@@ -292,6 +315,7 @@ a.button:active {
         flex: 1;
         z-index: 10;
         text-decoration: none;
+
     }
 
     .nav ul {
@@ -303,7 +327,7 @@ a.button:active {
     }
 
     .fuu li a {
-        float: left;
+        text-align: right;
     }
 
     .fuu ul {
@@ -328,7 +352,7 @@ a.button:active {
 
         display: block;
         color: black;
-
+        font-weight: bold;
 
     }
 
@@ -337,6 +361,9 @@ a.button:active {
     }
 
 
+    #footer {
+        font-size: 20px;
+    }
 
     .about1 h1 {
         font-size: 50px;
