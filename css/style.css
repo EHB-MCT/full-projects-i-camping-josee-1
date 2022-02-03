@@ -453,7 +453,7 @@ a.button:active {
 
     }
 
-    .nav ul {
+    .fuu ul {
 
         list-style-type: none;
         margin: 0;
@@ -461,20 +461,20 @@ a.button:active {
         text-decoration: none;
     }
 
-    .nav li {
+    .fuu li {
         text-decoration: none;
         float: left;
     }
 
-    .nav li a {
+    .fuu li a {
 
         display: block;
         color: white;
-        padding: 0px 20px;
+        padding: 0px 10px;
 
     }
 
-    .nav a {
+    .fuu a {
         text-decoration: none;
     }
 
