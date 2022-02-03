@@ -226,7 +226,7 @@ a.button {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
-    background-color: white;
+    background-color: red;
     text-align: center;
     width: 70%;
     border: 3px solid yellow;
@@ -307,7 +307,7 @@ a.button:active {
         margin-top: 10px;
     }
 
-    .about2-widet {
+    .about2-wide {
         background-color: lightyellow;
         display: block;
     }
@@ -354,7 +354,7 @@ a.button:active {
 
 @media (min-width:1280px) {
     p {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .about-us img {
