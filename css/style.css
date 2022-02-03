@@ -135,11 +135,9 @@ body {
 }
 
 .headertext {
-    font-size: 30px;
     font-weight: bold;
     color: white;
     position: absolute;
-    text-align: center;
     left: 10%;
     top: 40%;
 }
@@ -178,6 +176,7 @@ button:active {
 .aboutslide {
     margin-left: 20%;
     margin-right: 20%;
+    height: 180px;
 }
 
 .aboutslide img {
@@ -186,7 +185,7 @@ button:active {
 }
 
 .news {
-    background-color: lightyellow;
+    background-color: white;
 }
 
 .cantine {
