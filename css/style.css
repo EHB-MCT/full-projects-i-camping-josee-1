@@ -186,7 +186,6 @@ button:active {
 
 .news {
     background-color: white;
-    display: flex;
 }
 
 .cantine {
@@ -540,7 +539,6 @@ a.button:active {
 
     .news {
         align-items: center;
-        display: flex;
     }
 
     #footer {
@@ -569,14 +567,15 @@ a.button:active {
     }
 
     .programma {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 30px;
+        text-align: left;
+        width: 50%;
     }
 
     .programma button {
         width: 30%;
     }
+
+    .tshirt {}
 
     .foto {
         margin-top: 5%;
@@ -586,18 +585,19 @@ a.button:active {
     }
 
     .it {
-        text-align: center;
+        text-align: left;
         flex: 1;
     }
 
     .ct {
         text-align: left;
-        margin-left: 2%;
+        margin: 0% 8%;
     }
 
     .cantine img {
         padding: 2%;
-        width: 100%;
+        width: 85%;
+        margin-left: 6%;
 
     }
 
@@ -607,16 +607,10 @@ a.button:active {
 
     .but {
         margin-top: 20px;
+        margin-bottom: 50px;
         width: 30%;
         margin-left: 35%;
     }
 
-    .yomom {
-        flex: 1;
-    }
-
-    .fu {
-        flex: 1;
-        float: right;
-    }
+    .fu {}
 }
