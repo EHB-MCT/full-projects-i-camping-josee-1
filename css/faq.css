@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+.headertext {
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+
 body {
     margin: 0 auto;
     text-align: center;
@@ -8,6 +17,10 @@ body {
 
 h3 {
     margin: 0px 5%;
+}
+
+.desktopnav {
+    display: none;
 }
 
 #menuToggle {
@@ -129,6 +142,7 @@ h3 {
 .about1 {
     background-color: white;
     padding-bottom: 30px;
+    padding-top: 50px;
 }
 
 .about1 img {
@@ -255,6 +269,101 @@ a.button:active {
 }
 
 @media (min-width: 768px) {
+    .headertext {
+        font-weight: bold;
+        font-size: large;
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    .desktopnav {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .logo {
+
+        flex: 1;
+        z-index: 10;
+    }
+
+    .logo img {
+        width: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
+
+    }
+
+    .nav {
+
+        flex: 1;
+        z-index: 10;
+        text-decoration: none;
+
+    }
+
+    .nav ul {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .fuu li a {
+        text-align: right;
+    }
+
+    .fuu ul {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .fuu li {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .nav li {
+        text-decoration: none;
+        float: left;
+        padding: 0px 30px;
+    }
+
+    .nav li a {
+
+        display: block;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    .fuu a {
+        text-decoration: none;
+    }
+
+
+    #footer {
+        font-size: 20px;
+    }
 
     .about1 h1 {
         font-size: 50px;

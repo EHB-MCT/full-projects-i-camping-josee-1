@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 @media (max-width:768px) {
+    .headertext {
+        font-weight: bold;
+        font-size: large;
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 15%;
+    }
+
     .nav {
         display: none;
     }
@@ -57,7 +66,7 @@
         margin-bottom: 5px;
         position: relative;
 
-        background: white;
+        background: black;
         border-radius: 3px;
 
         z-index: 1;
@@ -134,13 +143,7 @@ body {
     width: 100%;
 }
 
-.headertext {
-    font-weight: bold;
-    color: white;
-    position: absolute;
-    left: 10%;
-    top: 40%;
-}
+
 
 
 
@@ -421,16 +424,34 @@ a.button:active {
 
 
 
+
 @media (min-width:768px) {
+    .headertext {
+        font-weight: bold;
+        font-size: large;
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
     #menu {
         display: none;
     }
 
+    #menuToggle {
+        display: none;
+    }
+
     .desktopnav {
+        width: 100%;
         display: flex;
         position: absolute;
-
-
+        background-color: rgba(255, 255, 255, 0.4);
     }
 
     .logo {
@@ -450,6 +471,7 @@ a.button:active {
 
         flex: 1;
         z-index: 10;
+        text-decoration: none;
 
     }
 
@@ -462,7 +484,7 @@ a.button:active {
     }
 
     .fuu li a {
-        float: left;
+        text-align: right;
     }
 
     .fuu ul {
@@ -471,50 +493,31 @@ a.button:active {
         text-decoration: none;
     }
 
+    .fuu li {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
 
     .nav li {
         text-decoration: none;
-        float: right;
+        float: left;
         padding: 0px 10px;
+
     }
 
     .nav li a {
 
         display: block;
-        color: white;
-
+        color: black;
+        font-weight: bold;
 
     }
 
     .fuu a {
         text-decoration: none;
     }
-}
 
-/*
-
-    .nav {
-        text-decoration: none;
-        float: right;
-        width: 100%;
-        z-index: 10;
-        
-    }
-
-    .nav ul {}
-
-    .nav li {
-        padding-left: 1%;
-        font-size: larger;
-        display: inline;
-        z-index: 10;
-        color: white;
-
-    }
-*/
-
-
-@media (min-width:768px) {
 
     #footer {
         font-size: 20px;

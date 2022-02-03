@@ -10,34 +10,78 @@
 </head>
 
 <body>
-    <div id="menuToggle">
+    <nav role="navigation">
+        <div id="menuToggle">
 
-        <input type="checkbox" />
+            <input type="checkbox" />
 
-        <span></span>
-        <span></span>
-        <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-        <ul id="menu">
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="aboutus.html">
-                <li>About us</li>
-            </a>
-            <a href="cj.html">
-                <li>Cantine Josée</li>
-            </a>
-            <a href="programma.html">
-                <li>Programma</li>
-            </a>
-            <a href="faq.html">
-                <li>FAQ</li>
-            </a>
+            <ul id="menu">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="aboutus.html">
+                    <li>About us</li>
+                </a>
+                <a href="cj.html">
+                    <li>Cantine Josée</li>
+                </a>
+                <a href="programma.html">
+                    <li>Programma</li>
+                </a>
+                <a href="faq.html">
+                    <li>FAQ</li>
+                </a>
+            </ul>
 
-        </ul>
+        </div>
+        <div class="desktopnav">
+            <div class="logo">
+                <img src="images/logo_Camping_Josée.png">
+            </div>
+            <div class="fuu">
+                <ul class="nav">
 
-    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="cj.html">Cantine Josée</a></li>
+                    <li><a href="programma.html">Programma</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="headerslides" style="width: 100%;">
+            <img class="mySlides " src="images/background_header_2.png" style="width:100%;">
+            <img class="mySlides " src="images/sfeerfoto9.png" style="width:100%;">
+
+        </div>
+        <div class="headertext">
+            <h1>Camping Josée</h1>
+            <p>Sint-Joost-Ten-Node</p>
+        </div>
+        <script>
+            var Index = 0;
+            carousel1();
+
+            function carousel1() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                Index++;
+                if (Index > x.length) {
+                    Index = 1
+                }
+                x[Index - 1].style.display = "block";
+                setTimeout(carousel1, 4000);
+            }
+        </script>
+    </nav>
     <div id="about-us" class="about-us">
         <div class="about1">
             <h1> FAQ</h1>
