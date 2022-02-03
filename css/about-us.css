@@ -266,14 +266,6 @@ a.button:active {
 }
 
 @media (min-width:300px) {
-    .about2-wide {
-        display: none;
-    }
-
-    .about2-widet {
-        display: block;
-    }
-
     .headertext {
         font-weight: bold;
         font-size: large;
@@ -310,7 +302,7 @@ a.button:active {
         margin-left: 10px;
     }
 
-    .about2-widet {
+    .about2-wide {
         display: none;
     }
 
@@ -334,7 +326,7 @@ a.button:active {
         margin-top: 10px;
     }
 
-    .about2-widet {
+    .about2-wide {
         background-color: lightyellow;
         display: block;
     }
@@ -356,6 +348,16 @@ a.button:active {
     .about3 p {
         padding: 70px 0;
         margin-left: 10px;
+    }
+}
+
+@media (min-width: 480px) {
+    .about2-wide {
+        display: none;
+    }
+
+    .about2-widet {
+        display: block;
     }
 }
 
