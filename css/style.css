@@ -471,11 +471,16 @@ a.button:active {
         text-decoration: none;
     }
 
+    .fuu li {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
 
     .nav li {
         text-decoration: none;
         float: left;
-        padding: 0px 10px;
+        padding: 0px 30px;
     }
 
     .nav li a {
