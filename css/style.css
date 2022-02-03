@@ -178,9 +178,8 @@ button:active {
 }
 
 .aboutslide {
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 180px;
+
+    width: 40%;
     margin-top: 30px;
 }
 
@@ -256,10 +255,11 @@ button:active {
 .aboutslide img {
     border-radius: 15px;
     padding: 10px;
+    padding-left: 30%;
 }
 
 .tshirt {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 #news {
@@ -320,10 +320,10 @@ a.button {
     border-radius: 15px;
     text-decoration: none;
     color: black;
-    padding: 5px 10px;
+    padding: 5px 0px;
     background-color: lightyellow;
     text-align: center;
-    width: 70%;
+    width: 60%;
     border: 3px solid yellow;
     display: inline-block;
     vertical-align: middle;
@@ -432,6 +432,24 @@ a.button:active {
 
 
 @media (min-width: 768px) {
+    .content {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .About {
+        margin-bottom: 50px;
+    }
+
+    .button {
+        margin-left: 30px;
+    }
+
+    .bread {
+        margin-top: 50px;
+        margin-left: 20%;
+    }
+
     .headertext {
         font-weight: bold;
         font-size: large;
@@ -529,6 +547,11 @@ a.button:active {
         font-size: 20px;
     }
 
+    .cam h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
     .cam {
         display: flex;
         text-align: left;
@@ -554,14 +577,11 @@ a.button:active {
         width: 30%;
     }
 
-    .tshirt {
-        display: flex;
-
-    }
+    .tshirt {}
 
     .foto {
         margin-top: 5%;
-        width: 40%;
+        width: 100%;
         height: auto;
 
     }
@@ -578,16 +598,18 @@ a.button:active {
 
     .cantine img {
         padding: 2%;
-        width: 30%;
-        height: 49%;
+        width: 100%;
+
     }
 
     .cantine {
-        display: flex;
+        margin-top: 50px;
     }
 
     .but {
+        margin-top: 20px;
         width: 30%;
+        margin-left: 35%;
     }
 
 }
