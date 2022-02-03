@@ -199,6 +199,7 @@ a.button {
 
     -webkit-user-select: none;
     user-select: none;
+
 }
 
 #menuToggle a {
@@ -344,6 +345,7 @@ button:active {
     width: 100%;
     background-color: lightsteelblue;
     color: black;
+    margin-top: 30px;
 
 }
 
