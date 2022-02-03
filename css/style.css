@@ -281,10 +281,6 @@ button:active {
     grid-gap: 30px;
 }
 
-.arange {
-    padding-bottom: 5px;
-}
-
 .arange img {
     display: block;
     margin: 0 auto;
@@ -339,6 +335,7 @@ a.button:active {
 
 .arange {
     align-content: center;
+    padding-bottom: 5px;
 }
 
 .search {
