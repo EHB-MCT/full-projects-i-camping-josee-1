@@ -150,15 +150,79 @@ button:active {
     color: white;
 }
 
+.about-us {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.about-us img {
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+.about1 {
+    margin: 5%;
+
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.about1 img {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.about1 h1+p {
+    margin: 0 auo;
+    width: 70%;
+}
+
+.about2 {
+    background-color: lightyellow;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about2 img:first {
+    margin-top: 30px;
+}
+
+.about2-widet {
+    display: none;
+}
+
+.about2 p {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.about3 {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.about3 img {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.about3 p {
+    margin: 0 auto;
+    width: 70%;
+}
+
 #footer {
     width: 100%;
     background-color: lightsteelblue;
     color: black;
-    margin-top: 30px;
+
 }
 
 .contact {
-    margin-left: 20%;
+    margin-left: 10%;
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: 200px 200px;
@@ -174,28 +238,13 @@ button:active {
     margin: 0 auto;
     padding-bottom: 15px;
     clear: both;
-    float: left;
     padding-right: 2%;
     padding-bottom: 0px;
 }
 
-.arange p {
-    text-align: justify;
-}
-
-.imag {
-    padding-bottom: 25px;
-    margin-bottom: 5px;
-}
-
 .imag img {
-    float: left;
+    align-items: center;
     padding-bottom: 10px;
-}
-
-.imag p {
-    float: right;
-
 }
 
 a {
@@ -223,6 +272,19 @@ a.button:active {
     background-color: yellow;
 }
 
+.social {
+    padding-top: 10%;
+    width: 100%;
+}
+
 .social img {
-    width: 20%;
+    width: 25px;
+}
+
+.tel {
+    align-content: center;
+}
+
+.arange {
+    align-content: center;
 }
