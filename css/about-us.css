@@ -266,6 +266,14 @@ a.button:active {
 }
 
 @media (min-width:300px) {
+    .about2-wide {
+        display: none;
+    }
+
+    .about2-widet {
+        display: block;
+    }
+
     .headertext {
         font-weight: bold;
         font-size: large;
@@ -302,7 +310,7 @@ a.button:active {
         margin-left: 10px;
     }
 
-    .about2-wide {
+    .about2-widet {
         display: none;
     }
 
@@ -326,7 +334,7 @@ a.button:active {
         margin-top: 10px;
     }
 
-    .about2-wide {
+    .about2-widet {
         background-color: lightyellow;
         display: block;
     }
