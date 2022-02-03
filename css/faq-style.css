@@ -6,6 +6,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+h3 {
+    margin: 0px 5%;
+}
+
 #menuToggle {
     display: block;
     position: fixed;
