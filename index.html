@@ -85,39 +85,44 @@
       </script>
     </nav>
     <div class="content">
+      <div class="cam">
+        <div class="About">
+          <h2>Wat is Camping Josée?</h2>
+          <p>Camping Josée brengt het zomergevoel naar jullie toe. </p>
+          <a href="aboutus.html" class="button">Lees meer</a>
 
-      <div class="About">
-        <h2>Wat is Camping Josée?</h2>
-        <p>Camping Josée brengt het zomergevoel naar jullie toe. </p>
+        </div>
+
+        <div class="aboutslide" style="width: 60%;height: 30%;">
+
+
+          <img class="Slides " src="images/Picture1.jpg" style="width:100%">
+          <img class="Slides " src="images/Picture2.jpg" style="width:100%">
+          <img class="Slides " src="images/Picture3.jpg" style="width:100%">
+          <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("Slides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {
+                myIndex = 1
+              }
+              x[myIndex - 1].style.display = "block";
+              setTimeout(carousel, 2000);
+            }
+          </script>
+
+        </div>
+
+
       </div>
 
-      <div class="aboutslide" style="width: 60%;height: 30%;">
-
-
-        <img class="Slides " src="images/Picture1.jpg" style="width:100%">
-        <img class="Slides " src="images/Picture2.jpg" style="width:100%">
-        <img class="Slides " src="images/Picture3.jpg" style="width:100%">
-        <script>
-          var myIndex = 0;
-          carousel();
-
-          function carousel() {
-            var i;
-            var x = document.getElementsByClassName("Slides");
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-              myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000);
-          }
-        </script>
-
-        <a href="aboutus.html" class="button">Lees meer</a>
-      </div>
       <div class="news">
         <div class="item">
           <div class="programma">
@@ -128,18 +133,22 @@
             <a href="programma.html" class="button" style="background-color: lightyellow;">Meer info</a>
           </div>
           <div class="tshirt">
-            <h2>t-shirt</h2>
-            <p>Wil je graag mensen ontmoeten in de
-              streek die dezelfde taal spreken of ben je
-              geïnteresseerd in andere talen?
-            </p>
-            <img src="images/tshirt.png" style="width: 60%;">
-            <div class="item">
+            <div class="it">
+              <h2>t-shirt</h2>
+              <p>Wil je graag mensen ontmoeten in de
+                streek die dezelfde taal spreken of ben je
+                geïnteresseerd in andere talen?
+              </p>
               <p>Kom naar Camping Josée en bij ingang
                 ontvang je een t-shirt én een sticker waar
                 je je naam en je gesproken talen op schrijft.
                 Nu is het aan jou.</p>
             </div>
+            <div class="foto">
+              <img src="images/tshirt.png" style="width: 60%;">
+
+            </div>
+
           </div>
 
 
@@ -153,10 +162,15 @@
             Cantine Josée, een open ontmoetingsplek waar alles kan en weinig moet, een plek voor open activiteiten, maar
             ook een hangplek, een plek waar iedereen gewoon mag zijn en zitten, zonder meer.
           </p>
+          <div class="but">
+            <a href="cj.html" class="button">Lees meer</a>
+
+          </div>
         </div>
-        <img src="images/logo_Cantine_Josée.png" style="width: 80%;">
-        <a href="cj.html" class="button">Lees meer</a>
+        <img src="images/logo_Cantine_Josée.png">
       </div>
+
+
   </header>
   <footer id="footer">
     <div class="contact">

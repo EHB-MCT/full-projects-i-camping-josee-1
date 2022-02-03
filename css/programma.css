@@ -431,40 +431,100 @@ a.button:active {
 
 
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
+    .headertext {
+        font-weight: bold;
+        font-size: large;
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
     #menu {
         display: none;
     }
 
-    #desktopnav {
-        background-color: lightyellow;
-        display: flex;
-        height: 50px;
+    #menuToggle {
+        display: none;
     }
 
+    .desktopnav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+
     .logo {
-        flex: 1;
+
+        z-index: 10;
     }
 
     .logo img {
-        width: 10%;
-        margin-left: 2%;
-        margin-top: 2%;
+        width: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
 
     }
 
     .nav {
+
+        z-index: 10;
         text-decoration: none;
-        color: black;
-        float: right;
-        flex: 3;
-        width: 100%;
 
     }
 
+    .nav ul {
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .fuu li a {
+        text-align: right;
+    }
+
+    .fuu ul {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .fuu li {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
+
     .nav li {
-        padding-left: 1%;
-        font-size: larger;
-        display: inline;
+        text-decoration: none;
+        float: left;
+        padding: 0px 30px;
+    }
+
+    .nav li a {
+
+        display: block;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    .fuu a {
+        text-decoration: none;
+    }
+
+
+    #footer {
+        font-size: 20px;
     }
 }
