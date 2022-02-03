@@ -492,3 +492,5 @@ a.button:active {
 .programma button {
     background-color: lightyellow;
 }
+
+@media (min-width:768px) {}
