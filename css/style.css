@@ -132,13 +132,16 @@ body {
 .header {
     margin: 0;
     width: 100%;
-    height: 400px;
-    position: relative;
-    transform: translate(0, -30px);
 }
 
 .headertext {
+    font-size: 30px;
+    font-weight: bold;
     color: white;
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    top: 40%;
 }
 
 
@@ -423,9 +426,9 @@ a.button:active {
     }
 
     #desktopnav {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: lightyellow;
         display: flex;
-        height: 20%;
+        height: 50px;
     }
 
     .logo {
@@ -436,6 +439,7 @@ a.button:active {
         width: 10%;
         margin-left: 2%;
         margin-top: 2%;
+
     }
 
     .nav {
@@ -444,7 +448,6 @@ a.button:active {
         float: right;
         flex: 3;
         width: 100%;
-        margin-top: 9%;
 
     }
 
