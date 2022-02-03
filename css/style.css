@@ -503,7 +503,8 @@ a.button:active {
     .nav li {
         text-decoration: none;
         float: left;
-        padding: 0px 30px;
+        padding: 0px 10px;
+
     }
 
     .nav li a {
