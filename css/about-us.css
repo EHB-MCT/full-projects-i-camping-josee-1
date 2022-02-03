@@ -265,7 +265,16 @@ a.button:active {
     align-content: center;
 }
 
-@media (min-width:480px) {
+@media (min-width:300px) {
+    .headertext {
+        font-weight: bold;
+        font-size: large;
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 15%;
+    }
+
     .about-us p {
         text-align: left;
     }
@@ -343,39 +352,52 @@ a.button:active {
 }
 
 @media (min-width:768px) {
+    .headertext {
+        font-weight: bold;
+        font-size: large;
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
     #menu {
         display: none;
     }
 
+    #menuToggle {
+        display: none;
+    }
+
     .desktopnav {
+        width: 100%;
         display: flex;
         position: absolute;
-
-
+        background-color: rgba(255, 255, 255, 0.4);
     }
 
-    body {
-        background-color: white;
+    .logo {
+
+        flex: 1;
+        z-index: 10;
     }
 
-    .about1 {
-        height: max-content;
-        align-items: center;
-    }
+    .logo img {
+        width: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
 
-    .about3 {
-        height: max-content;
-        align-items: center;
-    }
-
-    .about-us img {
-        width: 35%;
     }
 
     .nav {
 
         flex: 1;
         z-index: 10;
+        text-decoration: none;
 
     }
 
@@ -387,21 +409,42 @@ a.button:active {
         text-decoration: none;
     }
 
+    .fuu li a {
+        text-align: right;
+    }
+
+    .fuu ul {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .fuu li {
+
+        list-style-type: none;
+        text-decoration: none;
+    }
+
     .nav li {
         text-decoration: none;
         float: left;
+        padding: 0px 30px;
     }
 
     .nav li a {
 
         display: block;
-        color: white;
-        padding: 0px 20px;
+        color: black;
+        font-weight: bold;
 
     }
 
-    .nav a {
+    .fuu a {
         text-decoration: none;
+    }
+
+    #footer {
+        font-size: 20px;
     }
 }
 
