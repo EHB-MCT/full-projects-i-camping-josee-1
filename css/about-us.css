@@ -57,7 +57,7 @@
         margin-bottom: 5px;
         position: relative;
 
-        background: white;
+        background: black;
         border-radius: 3px;
 
         z-index: 1;
@@ -351,7 +351,7 @@ a.button:active {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .headertext {
         font-weight: bold;
         font-size: large;
@@ -376,13 +376,13 @@ a.button:active {
     .desktopnav {
         width: 100%;
         display: flex;
+        justify-content: space-between;
         position: absolute;
         background-color: rgba(255, 255, 255, 0.4);
     }
 
     .logo {
 
-        flex: 1;
         z-index: 10;
     }
 
@@ -395,7 +395,6 @@ a.button:active {
 
     .nav {
 
-        flex: 1;
         z-index: 10;
         text-decoration: none;
 
@@ -443,12 +442,14 @@ a.button:active {
         text-decoration: none;
     }
 
+
     #footer {
         font-size: 20px;
     }
 }
 
 @media (min-width:1280px) {
+
     p {
         font-size: 24px;
     }
