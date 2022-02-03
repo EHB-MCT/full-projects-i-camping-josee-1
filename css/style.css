@@ -474,7 +474,7 @@ a.button:active {
 
     .nav li {
         text-decoration: none;
-        float: left;
+        float: right;
         padding: 0px 10px;
     }
 

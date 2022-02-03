@@ -168,11 +168,11 @@ h3 {
     width: 100%;
     background-color: lightsteelblue;
     color: black;
-    padding-top: 10px;
+
 }
 
 .contact {
-    margin-left: 10%;
+    margin-left: 20%;
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-rows: 200px 200px;
@@ -188,13 +188,28 @@ h3 {
     margin: 0 auto;
     padding-bottom: 15px;
     clear: both;
+    float: left;
     padding-right: 2%;
     padding-bottom: 0px;
 }
 
+.arange p {
+    text-align: justify;
+}
+
+.imag {
+    padding-bottom: 25px;
+    margin-bottom: 5px;
+}
+
 .imag img {
-    align-items: center;
+    float: left;
     padding-bottom: 10px;
+}
+
+.imag p {
+    float: right;
+
 }
 
 a {
@@ -210,9 +225,9 @@ a.button {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
-    background-color: lightyellow;
+    background-color: white;
     text-align: center;
-    width: 70%;
+    width: 25%;
     border: 3px solid yellow;
     display: inline-block;
     vertical-align: middle;
@@ -222,36 +237,8 @@ a.button:active {
     background-color: yellow;
 }
 
-.social {
-    padding-top: 10%;
-    width: 100%;
-    text-align: center;
-}
-
 .social img {
-    width: 25px;
-}
-
-.tel1 {
-    text-align: center;
-}
-
-.tel2 {
-    text-align: left;
-}
-
-.tel2 h3 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.arange {
-    align-content: center;
-}
-
-#ctc {
-    text-align: center;
-    margin-bottom: 10px;
+    width: 20%;
 }
 
 @media (min-width: 768px) {
@@ -272,6 +259,8 @@ a.button:active {
     .about3 {
         padding-bottom: 100px;
         text-align: left;
+        margin: 0;
+        width: 100%;
     }
 
     .about2 h3 {
@@ -304,10 +293,6 @@ a.button:active {
     .about3 a {
         margin-left: 200px;
     }
-
-    .tel2 {
-        text-align: center;
-    }
 }
 
 @media (min-width:1280px) {
@@ -326,10 +311,6 @@ a.button:active {
     .about3 p {
         margin: 0 auto;
         width: 70%;
-    }
-
-    #footer {
-        font-size: 20px;
     }
 
 }
