@@ -569,15 +569,14 @@ a.button:active {
     }
 
     .programma {
-        text-align: left;
-        width: 50%;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     .programma button {
         width: 30%;
     }
-
-    .tshirt {}
 
     .foto {
         margin-top: 5%;
@@ -587,7 +586,7 @@ a.button:active {
     }
 
     .it {
-        text-align: left;
+        text-align: center;
         flex: 1;
     }
 
