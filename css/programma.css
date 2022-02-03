@@ -270,7 +270,7 @@ button:active {
     width: 100%;
     background-color: lightsteelblue;
     color: black;
-
+    padding-top: 10px;
 }
 
 .contact {
@@ -279,6 +279,10 @@ button:active {
     grid-template-columns: 40% 40%;
     grid-template-rows: 200px 200px;
     grid-gap: 30px;
+}
+
+.arange {
+    padding-bottom: 5px;
 }
 
 .arange img {
@@ -308,7 +312,7 @@ a.button {
     text-decoration: none;
     color: black;
     padding: 5px 10px;
-    background-color: white;
+    background-color: lightyellow;
     text-align: center;
     width: 70%;
     border: 3px solid yellow;
@@ -323,19 +327,33 @@ a.button:active {
 .social {
     padding-top: 10%;
     width: 100%;
+    text-align: center;
 }
 
 .social img {
     width: 25px;
 }
 
-.tel {
-    align-content: center;
+.tel1 {
+    text-align: center;
+}
+
+.tel2 {
+    text-align: left;
+}
+
+.tel2 h3 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .arange {
     align-content: center;
-    padding-bottom: 5px;
+}
+
+#ctc {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .search {
