@@ -144,10 +144,6 @@ body {
     width: 100%;
 }
 
-
-
-
-
 .content {
     text-align: center;
     color: black;
@@ -461,7 +457,6 @@ a.button:active {
         background-color: rgba(255, 255, 255, 0.4);
     }
 
-
     .logo {
 
         z-index: 10;
@@ -524,6 +519,9 @@ a.button:active {
         text-decoration: none;
     }
 
+    .news {
+        align-items: center;
+    }
 
     #footer {
         font-size: 20px;
