@@ -198,6 +198,7 @@ h3 {
 
 .arange {
     padding-bottom: 5px;
+    align-content: center;
 }
 
 .arange img {
@@ -249,10 +250,6 @@ a.button:active {
 }
 
 .tel {
-    align-content: center;
-}
-
-.arange {
     align-content: center;
 }
 

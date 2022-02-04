@@ -288,6 +288,7 @@ button:active {
 
 .arange {
     padding-bottom: 5px;
+    align-content: center;
 }
 
 .arange img {
@@ -316,10 +317,10 @@ a.button {
     border-radius: 15px;
     text-decoration: none;
     color: black;
-    padding: 5px 0px;
+    padding: 5px 10px;
     background-color: lightyellow;
     text-align: center;
-    width: 60%;
+    width: 70%;
     border: 3px solid yellow;
     display: inline-block;
     vertical-align: middle;
@@ -332,23 +333,14 @@ a.button:active {
 .social {
     padding-top: 10%;
     width: 100%;
-    text-align: center;
 }
 
 .social img {
     width: 25px;
 }
 
-.tel1 {
-    text-align: center;
-}
-
-.arange {
+.tel {
     align-content: center;
-}
-
-#ctc {
-    text-align: center;
 }
 
 .search {
@@ -575,8 +567,6 @@ a.button:active {
         width: 30%;
     }
 
-    .tshirt {}
-
     .foto {
         margin-top: 5%;
         width: 100%;
@@ -611,8 +601,6 @@ a.button:active {
         width: 30%;
         margin-left: 35%;
     }
-
-    .fu {}
 
     .imgb {
         width: 20%;
