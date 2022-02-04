@@ -613,4 +613,8 @@ a.button:active {
     }
 
     .fu {}
+
+    .imgb {
+        width: 20%;
+    }
 }
