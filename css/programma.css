@@ -270,7 +270,7 @@ button:active {
     width: 100%;
     background-color: lightsteelblue;
     color: black;
-    padding-top: 10px;
+
 }
 
 .contact {
@@ -283,6 +283,7 @@ button:active {
 
 .arange {
     padding-bottom: 5px;
+    align-content: center;
 }
 
 .arange img {
@@ -327,33 +328,22 @@ a.button:active {
 .social {
     padding-top: 10%;
     width: 100%;
-    text-align: center;
 }
 
 .social img {
     width: 25px;
 }
 
-.tel1 {
-    text-align: center;
-}
-
-.tel2 {
-    text-align: left;
-}
-
-.tel2 h3 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.arange {
+.tel {
     align-content: center;
 }
 
-#ctc {
+.tel1 {
+    align-items: center;
+}
+
+#ctc h3 {
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .search {

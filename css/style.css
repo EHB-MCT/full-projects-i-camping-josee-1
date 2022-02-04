@@ -289,6 +289,7 @@ button:active {
 
 .arange {
     padding-bottom: 5px;
+    align-content: center;
 }
 
 .arange img {
@@ -321,10 +322,17 @@ a.button {
     border-radius: 15px;
     text-decoration: none;
     color: black;
+<<<<<<< HEAD
     padding: 5px 0px;
     background-color: white;
     text-align: center;
     width: 40%;
+=======
+    padding: 5px 10px;
+    background-color: lightyellow;
+    text-align: center;
+    width: 70%;
+>>>>>>> e86e60901bdac3714bb0fa57135848fa36928959
     border: 3px solid yellow;
     display: inline-block;
     vertical-align: middle;
@@ -338,23 +346,14 @@ a.button:active {
 .social {
     padding-top: 10%;
     width: 100%;
-    text-align: center;
 }
 
 .social img {
     width: 25px;
 }
 
-.tel1 {
-    text-align: center;
-}
-
-.arange {
+.tel {
     align-content: center;
-}
-
-#ctc {
-    text-align: center;
 }
 
 .search {
@@ -605,8 +604,6 @@ a.button:active {
         width: 30%;
     }
 
-    .tshirt {}
-
     .foto {
         margin-top: 5%;
         width: 100%;
@@ -642,10 +639,15 @@ a.button:active {
         margin-left: 35%;
     }
 
+<<<<<<< HEAD
     .fu {}
 
     .imgb img {
         width: 80%;
         margin-left: 8%;
+=======
+    .imgb {
+        width: 20%;
+>>>>>>> e86e60901bdac3714bb0fa57135848fa36928959
     }
 }
