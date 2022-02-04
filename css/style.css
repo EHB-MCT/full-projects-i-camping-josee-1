@@ -169,6 +169,7 @@ button:active {
 }
 
 .about p {
+    margin-left: 10%;
     margin: 0 auto;
     width: 50%;
 }
@@ -219,8 +220,7 @@ a.button {
 .content {
     text-align: center;
     color: black;
-    margin: 0 auto;
-    width: 80%;
+
 }
 
 button {
@@ -256,6 +256,7 @@ button:active {
 
 .tshirt {
     margin-top: 50px;
+    margin-left: 10%;
 }
 
 #news {
@@ -309,6 +310,10 @@ a {
     color: black;
 }
 
+.bread a {
+    margin-left: 35%;
+}
+
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -317,12 +322,13 @@ a.button {
     text-decoration: none;
     color: black;
     padding: 5px 0px;
-    background-color: lightyellow;
+    background-color: white;
     text-align: center;
-    width: 60%;
+    width: 40%;
     border: 3px solid yellow;
     display: inline-block;
     vertical-align: middle;
+    margin-left: 25%;
 }
 
 a.button:active {
@@ -404,6 +410,10 @@ a.button:active {
     color: black;
 }
 
+.it {
+    color: black;
+}
+
 .btn:checked {
     background-color: yellow;
     color: black;
@@ -433,26 +443,46 @@ a.button:active {
         margin-bottom: 50px;
     }
 
+    .content p {
+        text-align: center;
+    }
+
     .About {
         margin-bottom: 50px;
+        margin-left: 8%;
+        width: 80%;
     }
 
     .button {
         margin-left: 30px;
     }
 
-    .bread {
+    .imgb {
         margin-top: 50px;
-        margin-left: 20%;
+    }
+
+    .bread {
+
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+
+    .bread img {
+        width: 80%;
     }
 
     .headertext {
         font-weight: bold;
-        font-size: large;
+        font-size: 40pt;
         color: white;
         position: absolute;
         left: 10%;
         top: 25%;
+    }
+
+    #lol {
+        font-size: 14pt;
+
     }
 
     .checkbox {
@@ -614,7 +644,8 @@ a.button:active {
 
     .fu {}
 
-    .imgb {
-        width: 20%;
+    .imgb img {
+        width: 80%;
+        margin-left: 8%;
     }
 }

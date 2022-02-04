@@ -358,6 +358,7 @@ a.button:active {
 
     .about2-widet {
         display: block;
+        background-color: lightyellow;
     }
 }
 
@@ -368,6 +369,7 @@ a.button:active {
     }
 
     .about2-widet {
+
         display: block;
     }
 
